@@ -11,8 +11,11 @@ A simple Python project that downloads YouTube videos, extracts audio, and gener
 
 # bash
 git clone https://github.com/ASingh0510/video_summarize.git
+
 cd video_summarize
+
 pip install -r requirements.txt
+
 python main.py
 
 Then download FFMPEG using:
