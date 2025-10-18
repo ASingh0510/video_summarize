@@ -38,27 +38,40 @@ python -m venv whisper-env
 
 # 2. Activate the environment
 Windows : whisper-env\Scripts\activate 
+
 Mac/Linux: source whisper-env/bin/activate
+
 Arch/Fish: source whisper-env/bin/activate.fish
 
 
 # Since the tool works with chatgpt you will need an api key which is easy to make and free to use.
 
 1. https://platform.openai.com/api-keys
+   
 2. Make an api key but never share it with anyone.
+   
 3. Set it up while being in the whisper env.
+   
 # macOS/Linux
+
 export OPENAI_API_KEY="your_api_key_here"
+
 # Arch
+
 set -x set -x OPENAI_API_KEY "your_api_key_here"
+
 # Windows (PowerShell)
+
 setx OPENAI_API_KEY "your_api_key_here"
 
 
 ## Usage
+
 # From YouTube
+
 python main.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 # From a local file
+
 python main.py "path/to/video.mp4"
 
