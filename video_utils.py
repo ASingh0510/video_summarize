@@ -12,8 +12,12 @@ COOKIES_PATH = os.path.expanduser("~/cookies.txt")
 def download_yt_vid(url):
     ydl_opts = {
         'outtmpl': os.path.join(DATA_DIR, '%(title)s.%(ext)s'),  # Save in data/ folder
-        'format': 'bestvideo+bestaudio/best',                    # Pick best video and audio
-        'merge_output_format': 'mp4',                            # Force output to MP4
+        'format': 'bestaudio/best',                              # Pick best video/audio. You can change add bestvideo+bestaudio/best and add 'merge_output_format': 'mp4', below do make sure to remove postprocessors
+        'postprocessors': [{                                     # Convert to mp3 after download
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',                           # Change to 128 for faster downloads.
+        }],                          
         'noplaylist': True                                       # Ignore playlists can be set to false if u want to
     }
 
