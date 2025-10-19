@@ -44,7 +44,7 @@ Mac/Linux: source whisper-env/bin/activate
 Arch/Fish: source whisper-env/bin/activate.fish
 
 
-# Since the tool works with chatgpt you will need an api key which is easy to make and free to use.
+# The tool works with chatgpt too for that you will need an api key, if you want to use offline models skip this part.
 
 1. https://platform.openai.com/api-keys
    
@@ -65,7 +65,7 @@ set -x set -x OPENAI_API_KEY "your_api_key_here"
 setx OPENAI_API_KEY "your_api_key_here"
 
 
-## Usage
+## Usage: While being in the whisper env run these commands
 
 # From YouTube
 
