@@ -1,4 +1,6 @@
 data/
 __pycache__/
-*.pycdata/
-data/
+*.pyc
+*.safetensors
+*.gguf
+*.bin
