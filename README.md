@@ -1,6 +1,6 @@
 # Video Summarizer
 
-A simple Python project that downloads YouTube videos, extracts audio, and generates a summary using OpenAI Whisper and text summarization.
+A simple Python project that downloads YouTube videos, extracts audio, and generates a summary using OpenAI Whisper/Offline models.
 
 ## Features
 - Download videos from YouTube
@@ -73,5 +73,5 @@ python main.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 # From a local file
 
-python main.py "path/to/video.mp4"
+python main.py "path/to/video.mp4" 
 
