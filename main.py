@@ -58,7 +58,7 @@ def main():
 
     print(f"\nTranscription saved to {txt_path}")
 
-    # Summarize using ChatGPT (no mode selection now)
+    # Summarize 
     print("\nGenerating summary...")
     summarize_text(txt_path)
 
